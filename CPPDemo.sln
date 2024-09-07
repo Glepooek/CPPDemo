@@ -1,0 +1,110 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPPDemo", "CPPDemo\CPPDemo.vcxproj", "{B21F2D4E-9A2D-4F61-A3E4-069BA463082E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsharpCallCPPDemo", "CsharpCallCPPDemo\CsharpCallCPPDemo.csproj", "{78AA8C35-F7DE-4D4C-89D1-64B8F177F8E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExceptionCatch", "TestExceptionCatch\TestExceptionCatch.csproj", "{DEDFA3CF-B120-40AF-9AB8-AD459788B67F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPPDemoLib", "CPPDemoLib\CPPDemoLib.vcxproj", "{FC4E9B81-1597-46D1-AE0F-04EEA573815E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.TestExceptionCatch", "Wpf.TestExceptionCatch\Wpf.TestExceptionCatch.csproj", "{508C4574-F0F8-477F-BA29-98B8BC79C511}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B21F2D4E-9A2D-4F61-A3E4-069BA463082E}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{B21F2D4E-9A2D-4F61-A3E4-069BA463082E}.Debug|x64.ActiveCfg = Debug|x64
+		{B21F2D4E-9A2D-4F61-A3E4-069BA463082E}.Debug|x64.Build.0 = Debug|x64
+		{B21F2D4E-9A2D-4F61-A3E4-069BA463082E}.Debug|x86.ActiveCfg = Debug|Win32
+		{B21F2D4E-9A2D-4F61-A3E4-069BA463082E}.Debug|x86.Build.0 = Debug|Win32
+		{B21F2D4E-9A2D-4F61-A3E4-069BA463082E}.Release|Any CPU.ActiveCfg = Release|Win32
+		{B21F2D4E-9A2D-4F61-A3E4-069BA463082E}.Release|x64.ActiveCfg = Release|x64
+		{B21F2D4E-9A2D-4F61-A3E4-069BA463082E}.Release|x64.Build.0 = Release|x64
+		{B21F2D4E-9A2D-4F61-A3E4-069BA463082E}.Release|x86.ActiveCfg = Release|Win32
+		{B21F2D4E-9A2D-4F61-A3E4-069BA463082E}.Release|x86.Build.0 = Release|Win32
+		{78AA8C35-F7DE-4D4C-89D1-64B8F177F8E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78AA8C35-F7DE-4D4C-89D1-64B8F177F8E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78AA8C35-F7DE-4D4C-89D1-64B8F177F8E6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{78AA8C35-F7DE-4D4C-89D1-64B8F177F8E6}.Debug|x64.Build.0 = Debug|Any CPU
+		{78AA8C35-F7DE-4D4C-89D1-64B8F177F8E6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{78AA8C35-F7DE-4D4C-89D1-64B8F177F8E6}.Debug|x86.Build.0 = Debug|Any CPU
+		{78AA8C35-F7DE-4D4C-89D1-64B8F177F8E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78AA8C35-F7DE-4D4C-89D1-64B8F177F8E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78AA8C35-F7DE-4D4C-89D1-64B8F177F8E6}.Release|x64.ActiveCfg = Release|Any CPU
+		{78AA8C35-F7DE-4D4C-89D1-64B8F177F8E6}.Release|x64.Build.0 = Release|Any CPU
+		{78AA8C35-F7DE-4D4C-89D1-64B8F177F8E6}.Release|x86.ActiveCfg = Release|Any CPU
+		{78AA8C35-F7DE-4D4C-89D1-64B8F177F8E6}.Release|x86.Build.0 = Release|Any CPU
+		{DEDFA3CF-B120-40AF-9AB8-AD459788B67F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEDFA3CF-B120-40AF-9AB8-AD459788B67F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEDFA3CF-B120-40AF-9AB8-AD459788B67F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DEDFA3CF-B120-40AF-9AB8-AD459788B67F}.Debug|x64.Build.0 = Debug|Any CPU
+		{DEDFA3CF-B120-40AF-9AB8-AD459788B67F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DEDFA3CF-B120-40AF-9AB8-AD459788B67F}.Debug|x86.Build.0 = Debug|Any CPU
+		{DEDFA3CF-B120-40AF-9AB8-AD459788B67F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEDFA3CF-B120-40AF-9AB8-AD459788B67F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEDFA3CF-B120-40AF-9AB8-AD459788B67F}.Release|x64.ActiveCfg = Release|Any CPU
+		{DEDFA3CF-B120-40AF-9AB8-AD459788B67F}.Release|x64.Build.0 = Release|Any CPU
+		{DEDFA3CF-B120-40AF-9AB8-AD459788B67F}.Release|x86.ActiveCfg = Release|Any CPU
+		{DEDFA3CF-B120-40AF-9AB8-AD459788B67F}.Release|x86.Build.0 = Release|Any CPU
+		{FC4E9B81-1597-46D1-AE0F-04EEA573815E}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{FC4E9B81-1597-46D1-AE0F-04EEA573815E}.Debug|x64.ActiveCfg = Debug|x64
+		{FC4E9B81-1597-46D1-AE0F-04EEA573815E}.Debug|x64.Build.0 = Debug|x64
+		{FC4E9B81-1597-46D1-AE0F-04EEA573815E}.Debug|x86.ActiveCfg = Debug|Win32
+		{FC4E9B81-1597-46D1-AE0F-04EEA573815E}.Debug|x86.Build.0 = Debug|Win32
+		{FC4E9B81-1597-46D1-AE0F-04EEA573815E}.Release|Any CPU.ActiveCfg = Release|Win32
+		{FC4E9B81-1597-46D1-AE0F-04EEA573815E}.Release|x64.ActiveCfg = Release|x64
+		{FC4E9B81-1597-46D1-AE0F-04EEA573815E}.Release|x64.Build.0 = Release|x64
+		{FC4E9B81-1597-46D1-AE0F-04EEA573815E}.Release|x86.ActiveCfg = Release|Win32
+		{FC4E9B81-1597-46D1-AE0F-04EEA573815E}.Release|x86.Build.0 = Release|Win32
+		{508C4574-F0F8-477F-BA29-98B8BC79C511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{508C4574-F0F8-477F-BA29-98B8BC79C511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{508C4574-F0F8-477F-BA29-98B8BC79C511}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{508C4574-F0F8-477F-BA29-98B8BC79C511}.Debug|x64.Build.0 = Debug|Any CPU
+		{508C4574-F0F8-477F-BA29-98B8BC79C511}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{508C4574-F0F8-477F-BA29-98B8BC79C511}.Debug|x86.Build.0 = Debug|Any CPU
+		{508C4574-F0F8-477F-BA29-98B8BC79C511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{508C4574-F0F8-477F-BA29-98B8BC79C511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{508C4574-F0F8-477F-BA29-98B8BC79C511}.Release|x64.ActiveCfg = Release|Any CPU
+		{508C4574-F0F8-477F-BA29-98B8BC79C511}.Release|x64.Build.0 = Release|Any CPU
+		{508C4574-F0F8-477F-BA29-98B8BC79C511}.Release|x86.ActiveCfg = Release|Any CPU
+		{508C4574-F0F8-477F-BA29-98B8BC79C511}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E29574CC-4808-4D60-A263-3614C1B5C443}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/ekplex
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CPPDemo\\CPPDemo.vcxproj
+		SccProjectName1 = CPPDemo
+		SccLocalPath1 = CPPDemo
+		SccProjectUniqueName2 = CsharpCallCPPDemo\\CsharpCallCPPDemo.csproj
+		SccProjectName2 = CsharpCallCPPDemo
+		SccLocalPath2 = CsharpCallCPPDemo
+		SccProjectUniqueName3 = TestExceptionCatch\\TestExceptionCatch.csproj
+		SccProjectName3 = TestExceptionCatch
+		SccLocalPath3 = TestExceptionCatch
+		SccProjectUniqueName4 = CPPDemoLib\\CPPDemoLib.vcxproj
+		SccProjectName4 = CPPDemoLib
+		SccLocalPath4 = CPPDemoLib
+		SccProjectUniqueName5 = Wpf.TestExceptionCatch\\Wpf.TestExceptionCatch.csproj
+		SccProjectName5 = Wpf.TestExceptionCatch
+		SccLocalPath5 = Wpf.TestExceptionCatch
+	EndGlobalSection
+EndGlobal

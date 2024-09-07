@@ -1,0 +1,191 @@
+1、基本语法
+#include "stdafx.h"
+#include <iostream>
+
+2、注释
+//单行注释
+/**/多行注释
+
+3、数据类型
+布尔类型bool、字符型char、整型int、浮点型float、双浮点型double、无类型void、宽字符类型wchar_t
+一些基本类型可以使用一个或多个类型修饰符进行修饰：signed、unsigned、short、long
+
+typedef 声明，为一个已有类型取一个新名字。
+typedef type newname
+
+enum类型
+
+4、变量类型
+变量的名称可以由字母、数字和下划线字符组成。它必须以字母或下划线开头。大写字母和小写字母是不同的，因为 C++ 是大小写敏感的。
+
+一个字符char=一个字节byte=8二进制位bit
+
+变量的类型：
+布尔类型bool、字符型char、整型int、浮点型float、双浮点型double、无类型void、宽字符类型wchar_t
+枚举、指针、数组、引用、数据结构、类等
+
+变量定义：
+type variable_list;
+变量可以在声明的时候被初始化（指定一个初始值）。初始化器由一个等号，后跟一个常量表达式组成。
+
+
+变量在同一文件下无需声明，在多个文件下需要声明。
+extern type variable_list;
+
+5、变量的作用域
+在函数或一个代码块内部声明的变量，称为局部变量。
+在函数参数的定义中声明的变量，称为形式参数。
+在所有函数外部声明的变量，称为全局变量。
+
+6、常量
+常量是固定值，在程序执行期间不会改变。
+
+常量的类型：可以是任何基本数据类型，如整数、浮点数、双浮点数、字符、字符串、布尔等
+
+常量定义：
+有两种简单的定义常量的方式：使用 #define 预处理器、用 const 关键字。
+#define LENGTH 10
+const int LENGTH = 10;
+
+常量名通常定义为大写形式。
+
+7、修饰符类型
+C++ 允许在 char、int 和 double 数据类型前放置修饰符。
+
+数据类型修饰符包括：signed、unsigned、long、short。
+修饰符 signed、unsigned、long 和 short 可应用于整型，signed 和 unsigned 可应用于字符型，long 可应用于双精度型。
+修饰符 signed 和 unsigned 也可以作为 long 或 short 修饰符的前缀。例如：unsigned long int。
+
+C++ 允许使用速记符号来声明无符号短整数或无符号长整数。您可以不写 int，只写单词 unsigned、short 或 unsigned、long，int 是隐含的。
+例如，下面的两个语句都声明了无符号整型变量。
+unsigned x;
+unsigned int y;
+
+
+类型限定符：
+const	const 类型的对象在程序执行期间不能被修改改变。
+volatile	修饰符 volatile 告诉编译器不需要优化volatile声明的变量，让程序可以直接从内存中读取变量。对于一般的变量编译器会对变量进行优化，将内存中的变量值放在寄存器中以加快读写效率。
+restrict	由 restrict 修饰的指针是唯一一种访问它所指向的对象的方式。只有 C99 增加了新的类型限定符 restrict。
+
+8、运算符
+算术运算符
+关系运算符
+逻辑运算符
+位运算符
+赋值运算符
+
+杂项运算符
+1)sizeof(data_type)，返回变量或数据类型的字节大小，sizeof 运算符也可用于获取类、结构、共用体和其他用户自定义数据类型的大小
+
+2)condition?x:y
+
+3)逗号运算符，var x= (表达式,表达式,表达式,表达式)
+逗号运算符把几个表达式串在一起，顺序执行，最右边的那个表达式的值将作为整个逗号表达式的值，其他表达式的值会被丢弃。
+
+4)强制转换运算符
+(type) expression
+const_cast<type> (expr)
+dynamic_cast<type> (expr)
+reinterpret_cast<type> (expr)
+static_cast<type> (expr)
+
+5）指针运算符
+https://blog.csdn.net/qq_32103261/article/details/80221014
+指针是一个包含另一个变量地址的变量，即指向另一个变量。变量可以是任意的数据类型，包括对象、结构或指针。
+&，取地址运算符，返回操作数的内存地址
+*，间接寻址运算符，返回操作数指定地址的变量的值
+
+6）成员运算符
+.（点）运算符和 ->（箭头）运算符用于引用类、结构和共用体的成员。
+点运算符应用于实际的对象。箭头运算符与一个指向对象的指针一起使用。
+
+例如，假设有下面的结构：
+struct Employee 
+{
+  char first_name[16];
+  int  age;
+} emp;
+
+（.）点运算符
+下面的代码把值 "zara" 赋给对象 emp 的 first_name 成员：
+strcpy(emp.first_name, "zara");
+
+（->）箭头运算符
+如果 p_emp 是一个指针，指向类型为 Employee 的对象，则要把值 "zara" 赋给对象 emp 的 first_name 成员，需要编写如下代码：
+strcpy(p_emp->first_name, "zara");
+
+简而言之，访问结构的成员时使用点运算符，而通过指针访问结构的成员时，则使用箭头运算符。
+
+9、循环语句
+while循环
+for循环
+do...while循环
+嵌套循环
+
+循环控制语句：
+break
+continue
+goto
+
+无限循环：
+for(;;)
+{
+
+}
+
+while(true) 
+{  
+
+ }
+
+do
+{  
+
+}while(true) 
+
+
+10、判断语句
+if语句
+if...else语句
+嵌套if语句
+switch语句
+嵌套switch语句
+条件运算符：Exp1 ? Exp2 : Exp3;
+
+11、函数
+函数声明告诉编译器函数的名称、返回类型和参数。
+return_type function_name( parameter list );
+函数定义提供了函数的实际主体。
+return_type function_name( parameter list )
+{
+   body of the function
+}
+
+调用方式：
+传值调用
+指针调用
+引用调用
+
+函数中的参数在定义时可设置默认值
+
+Lambda表达式
+
+12、数组
+声明一个数组，需要指定元素的类型（任意数据类型）和元素的数量（大于0）。
+type arrayName [ arraySize ];
+
+声明：double blance[10];
+声明并初始化：double blance[10] = {100.0, 50.0};
+访问数组：double slary = blance[9];
+
+13、字符串
+C风格字符串
+string类
+
+14、指针
+指针是一个变量，其值为另一个变量的地址，即，内存位置的直接地址。
+就像其他变量或常量一样，必须在使用指针存储其他变量地址之前，对其进行声明。
+指针变量声明的一般形式为：type *var-name;
+
+在声明指针变量时，没有赋具体的值，为其赋值NULL是好的编程习惯。
+NULL 指针是一个定义在标准库中的值为零的常量。
