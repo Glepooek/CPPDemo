@@ -1,18 +1,8 @@
 #include "pch.h"
-
-extern "C"
-{
-	__declspec(dllexport) int Max(int num1, int num2);
-	typedef void(__stdcall* ProgressCallback)(int);
-	__declspec(dllexport) void DoWork(ProgressCallback callback);
-	__declspec(dllexport) int GetLengthofString(char* msg);
-	__declspec(dllexport) void TestExceptionCahch1();
-	__declspec(dllexport) void TestExceptionCahch2();
-
-};
+#include "TestMath.h"
 
 // 函数定义
-int Max(int num1, int num2)
+MYLIBRARY_API int Max(int num1, int num2)
 {
 	int result = 0;
 	if (num1 > num2)
@@ -27,7 +17,7 @@ int Max(int num1, int num2)
 	return result;
 }
 
-void DoWork(ProgressCallback callback)
+MYLIBRARY_API void DoWork(ProgressCallback callback)
 {
 	for (int i = 0; i < 5; i++)
 	{
@@ -38,7 +28,7 @@ void DoWork(ProgressCallback callback)
 	}
 }
 
-int GetLengthofString(char* msg)
+MYLIBRARY_API int GetLengthofString(char* msg)
 {
 	// sizeof(msg); 获取分配空间的大小
 	return strlen(msg);
@@ -47,7 +37,7 @@ int GetLengthofString(char* msg)
 /// <summary>
 /// 用于在C#中调用时测试异常捕获
 /// </summary>
-void TestExceptionCahch1()
+MYLIBRARY_API void TestExceptionCahch1()
 {
 	int* p = NULL;
 
@@ -58,7 +48,7 @@ void TestExceptionCahch1()
 /// <summary>
 /// 用于在C#中调用时测试异常捕获
 /// </summary>
-void TestExceptionCahch2()
+MYLIBRARY_API void TestExceptionCahch2()
 {
 	int x = 10;
 	int y = 0;

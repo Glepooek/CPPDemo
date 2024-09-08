@@ -12,8 +12,8 @@ namespace CsharpCallCPPDemo
 			CsharpCallCPP.GetProgressValue();
 			// 获取字符串长度
 			CsharpCallCPP.GetLength();
-
-			//CsharpCallCPP.TestExceptionCahch();
+			// 捕获C++异常
+			CsharpCallCPP.TestExceptionCahch();
 
 			Console.ReadLine();
 		}

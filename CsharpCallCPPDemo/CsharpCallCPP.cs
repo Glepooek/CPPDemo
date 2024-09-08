@@ -10,7 +10,7 @@ namespace CsharpCallCPPDemo
     public delegate void TestCallback(int currentNum);
 
     /// <summary>
-    /// C#调用C++动态链接库实现类
+    /// C#通过P/Invoke方式调用C++动态链接库实现类
     /// </summary>
     public class CsharpCallCPP
     {
@@ -31,7 +31,7 @@ namespace CsharpCallCPPDemo
         }
 
         /// <summary>
-        /// 获取处理进度
+        /// 获取处理进度。C#委托传入C++
         /// </summary>
         public static void GetProgressValue()
         {
@@ -49,13 +49,21 @@ namespace CsharpCallCPPDemo
             Console.WriteLine("获取字符串长度");
             Console.WriteLine($"{GetLengthofString("hello world")}");
             Console.WriteLine($"{GetLengthofString("获取字符串长度")}");
+            Console.WriteLine();
         }
 
         public static void TestExceptionCahch()
         {
+            /**
+             .net不会捕获AccessViolationException异常。
+             因为它们被认为是进程状态损坏的异常。
+             要捕获这些异常，可以使用 HandleProcessCorruptedStateExceptions 特性和 SecurityCritical 特性。       
+             */
+
             try
             {
-                TestExceptionCahch1();
+                Console.WriteLine("捕获C++异常");
+                //TestExceptionCahch1();
                 //TestExceptionCahch2();
             }
             catch (Exception ex)
